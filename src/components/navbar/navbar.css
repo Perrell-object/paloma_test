@@ -1,0 +1,192 @@
+.paloma__navbar {
+  display: flex;
+  position: fixed;
+  width: 89rem;
+  height: 33rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.625rem;
+  flex-shrink: 0;
+
+
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.paloma__navbar-text {
+  display: flex;
+  position: absolute;
+  width: 86.8rem;
+  height: 32rem;
+  padding-bottom: 20rem;
+  bottom: 0;
+  right: 0;
+ 
+}
+
+.paloma__navbar-text_container {
+  display: flex;
+  position: absolute;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  gap: 0.625rem;
+  width: 86rem;
+  height: 30rem;
+
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4125rem;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  font-size: 10.875rem;
+  
+  padding-bottom: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.paloma__navbar-bmenu {
+  display: flex;
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  padding: 3rem;
+
+}
+
+.paloma__navbar-bmenu svg {
+  cursor: pointer;
+}
+
+.paloma__navbar-bmenu_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: end;
+  background-color: #070707;
+  margin-top: 8rem;
+  padding: 8rem;
+  right: 1px;
+  position: absolute;
+  min-width: 210px;
+  border-radius: 8px;
+  box-shadow: 0px 15px 25px rgba(255,255,255,255);
+}
+
+.paloma__navbar-bmenu_links p {
+  margin: 1rem 0;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.fade-in-bottom {
+	-webkit-animation: fade-in-bottom 1.8s ease-out both;
+	        animation: fade-in-bottom 1.8s ease-out both;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 1669px) {
+  .paloma__navbar-bmenu svg {
+   display: none;
+  }
+}
+ 
+
+@media screen and (max-width: 1666px) {
+  .paloma__navbar-text_container {
+    display: none;
+  }
+
+  .paloma__navbar-bmenu {
+    display: flex;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .paloma__navbar {
+    padding: 4rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .paloma__navbar {
+    padding: 2rem;
+  }
+
+  .paloma__navbar-bmenu_container {
+    top: 20px;
+  }
+
+  .paloma__navbar-bmenu_links {
+    display: block;
+  }
+}
+
+
+
+
+

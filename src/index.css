@@ -1,0 +1,11 @@
+@import url('https://fonts.google.com/specimen/Anton');
+
+:root {
+  --font-family: 'Anton', sans-serif;
+
+  --bg-image: url('./assets/paloma_bg.png');
+  --color-bg: #070707;
+  --color-text: rgba(255,255,255,0.70);
+  --color-head: rgba(232,232,232,1);
+  --bg-mobile: url('./assets/paloma_mobile.png');
+}
